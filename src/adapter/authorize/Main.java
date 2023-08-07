@@ -1,4 +1,6 @@
-package adapter;
+package adapter.authorize;
+
+import adapter.inherit.PrintBanner;
 
 /**
  * @program: DesignPatternStudy

@@ -1,4 +1,4 @@
-package adapter;
+package adapter.inherit;
 
 /**
  * @program: DesignPatternStudy
