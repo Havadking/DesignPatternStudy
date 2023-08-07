@@ -7,7 +7,7 @@ package prototype;
  * @create: 2023-08-07 10:13
  **/
 
-public class MessageBox implements Product {
+public class MessageBox extends Product {
     private char decoChar;
 
     public MessageBox(char decoChar) {
@@ -26,16 +26,5 @@ public class MessageBox implements Product {
             System.out.print(decoChar);
         }
         System.out.println();
-    }
-
-    @Override
-    public Product createClone() {
-        Product p = null;
-        try {
-            p = (Product) clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return p;
     }
 }

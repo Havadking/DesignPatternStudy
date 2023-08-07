@@ -7,7 +7,7 @@ package prototype;
  * @create: 2023-08-07 10:13
  **/
 
-public class UnderLinePen implements Product {
+public class UnderLinePen extends Product {
     private char ulChar;
 
     public UnderLinePen(char ulChar) {
@@ -22,16 +22,5 @@ public class UnderLinePen implements Product {
             System.out.print(ulChar);
         }
         System.out.println();
-    }
-
-    @Override
-    public Product createClone() {
-        Product p = null;
-        try {
-            p = (Product) clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return p;
     }
 }
