@@ -1,25 +1,24 @@
 package factorymethod;
 
+import factorymethod.framework.Factory;
+import factorymethod.framework.Product;
+import factorymethod.idcard.IDCardFactory;
+
 /**
  * @program: DesignPatternStudy
  * @description:
  * @author: Havad
- * @create: 2023-08-05 16:22
+ * @create: 2023-08-07 14:14
  **/
 
 public class Main {
     public static void main(String[] args) {
-        IFactory factory1 = new UndergraduateFactory();
-        IFactory factory2 = new VolunteerFactory();
-        LeiFeng student = factory1.createLeiFeng();
-        LeiFeng volunteer = factory2.createLeiFeng();
-
-        student.buyRice();
-        student.sweep();
-        student.wash();
-
-        volunteer.buyRice();
-        volunteer.sweep();
-        volunteer.wash();
+        Factory factory = new IDCardFactory();
+        Product card1 = factory.create("小明");
+        Product card2 = factory.create("小红");
+        Product card3 = factory.create("小刚");
+        card1.use();
+        card2.use();
+        card3.use();
     }
 }
