@@ -1,9 +1,4 @@
-package strategy;
-
-import strategy.ConcreteStrategyA;
-import strategy.ConcreteStrategyB;
-import strategy.ConcreteStrategyC;
-import strategy.Context;
+package part4.strategy;
 
 /**
  * @program: DesignPatternStudy
